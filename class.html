@@ -573,7 +573,11 @@
     
             // Correct code is 1@23$
             if (code === "1@23$") {
-                window.location.href = "path_to_your_pdf_file.pdf";  // Path to the PDF file
+                                           // Using anchor tag to force download
+                                           var link = document.createElement('a');
+                link.href = 'pepars/bs/attampt 01.pdf';  // Replace with the actual path of your PDF file
+                link.download = 'test.pdf';     // Name of the file to download
+                link.click();
             } else {
                 document.getElementById("errorMessageec").innerText = "Wrong code!";
             }
@@ -608,7 +612,11 @@
 
         // Correct code is 1@23$
         if (code === "1@23$") {
-            window.location.href = "path_to_your_pdf_file.pdf";  // Path to the PDF file
+                                       // Using anchor tag to force download
+                                       var link = document.createElement('a');
+                link.href = 'pepars/bs/attampt 01.pdf';  // Replace with the actual path of your PDF file
+                link.download = 'test.pdf';     // Name of the file to download
+                link.click();
         } else {
             document.getElementById("errorMessagebs").innerText = "Wrong code!";
         }
@@ -642,7 +650,12 @@
 
         // Correct code is 123
         if (code === "123") {
-            window.location.href = "pepars/bs/attampt 01.pdf";  // Path to the PDF file
+                            // Using anchor tag to force download
+                            var link = document.createElement('a');
+                link.href = 'pepars/bs/attampt 01.pdf';  // Replace with the actual path of your PDF file
+                link.download = 'test.pdf';     // Name of the file to download
+                link.click();
+
         } else {
             document.getElementById("errorMessageacc").innerText = "Wrong code!";
         }
