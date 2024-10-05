@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='web-file/normalize.css'>
+    <script src='main.js'></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+    <style>
+    
+    body{
+        margin: 0px;
+    }
+
+        /*hedder*/
+
+        header{
+
+            color: white;
+            background-color:  #167EDE;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 60px;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .bar{
+            width: 20px;
+            position: absolute;
+            top: 17px;
+            left: 15px;
+        }
+        
+        body>div>a{
+            font-size:0px;
+            position:relative;
+            left:1500px;
+        }
+
+         a{
+            
+            text-decoration: none;
+
+        } 
+
+        /* marge-content*/
+
+        /*sub-head*/
+
+        .sub-head{
+            background-color: #b0deff;
+            width: 100%;
+            height: 200px;
+            position: relative;
+            top: 70px;
+            border-radius: 10px;
+            
+        }
+
+        .marge-content{
+            position: relative;
+            margin: 15px;
+
+
+        }
+
+        .sub-head-image{
+            width: 146px;
+            display: inline;
+            position: relative;
+            top: 43px;
+            left: 18px;
+        }
+
+        .sub-head-text{
+            display: inline;
+            text-align: center;
+            margin-top: 0px;
+            position: absolute;
+            left: 185px;
+            top: 57px;
+            margin: 0px;
+            color: white;
+            font: -webkit-control;
+            font-size: 17px;
+        }
+
+        .sub-head-button{
+
+            background-color: #167EDE;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 6px;
+            width: 49px;
+            height: 24px;
+            font-size: 15px;
+            position: relative;
+            left: 84px;
+            top: 3px;
+
+
+        }
+
+
+
+        /* selection panel */
+
+        .flooter{
+
+            width: 100%;
+            height: 70px;
+            background-color: #167EDE;
+            position: fixed;
+            left:0;
+            bottom: 0px;
+
+        }
+
+      .space{
+
+            width: 100%;
+            height: 70px;
+            background-color: #ffffff;
+            position: absolute;
+            bottom: -142px;
+       
+    }
+
+   
+
+    .b-img{
+        width: 54px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .p-text{
+  
+        color: white;
+        position: absolute;
+        top: 54px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: table;
+        font-family: sans-serif;
+       
+    }
+
+
+    .b-img1{
+        width: 34px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 3px;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .panel-1{
+        
+        position: absolute;
+        left: 9%;
+        width: 70px;
+        height: 70px;
+        display: inline;
+
+       
+    }
+
+    .panel-2{
+       position: absolute;
+        left: 40%;
+        width: 70px;
+        height: 70px;
+        display: inline;
+    
+       
+    }
+
+    .panel-3{
+        position: absolute;
+        left: 71%;
+        width: 70px;
+        height: 70px;
+        display: inline;
+
+        background-color: #b0deff0d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+  
+    }
+
+    .panel-4{
+        position: absolute;
+        left: 79%;
+        width: 70px;
+        height: 70px;
+        display: inline;
+     
+    }
+
+
+    </style>
+    
+    <!-- menu bar-->
+    <style>
+        .dropbtn {
+          background-color: transparent;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: transparent;
+          
+        }
+        
+        .dropdown {
+            float: left;
+            position: fixed;
+            top:14px;
+            left: 9px;
+            display: inline-block;
+            z-index: 9999;
+            height: 30px;
+            
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 55px;
+            background-color: #ffffff;
+            min-width: 200px;
+            height: 510px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            right: 0;
+            z-index: 1;
+          
+        }
+        
+        .dropdown-content a {
+          color: rgb(0, 0, 0);
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ffffff;}
+        
+        .show {display: block;
+            
+        }
+
+        .menu-img{
+
+            width: 100px;
+
+        }
+
+        .menu-content{
+
+            font-family: serif;
+            display: grid;
+
+        }
+
+        .name{
+            position: relative;
+            top: 51px;
+            text-align: center;
+        }
+
+        .photo{
+            width: 100px;
+            position: relative;
+            top: 46px;
+            left: 35%;
+        }
+        .dis{
+            position: relative;
+            top: 54px;
+            text-align: center;
+        }
+
+        .c-1{
+            width: 10px;
+            height: 136px;
+        }
+       </style> 
+   
+        
+
+</head>
+<body>
+    <header class="header">
+        <h2 style="text-align: center;margin-top: 15px;">Our Staf</h2>
+        <img src="web-file/bars-solid (1).svg" alt="bar" class="bar">
+        
+    </header>
+ <!--menu bar-->
+
+ <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn"><img src="web-file/bars-solid (1).svg" alt=""></button>
+    <div id="myDropdown" class="dropdown-content" style="left:0">
+
+        <center><img src="web-file/AL.png" alt="" class="menu-img"></center>
+        <hr>
+        <div style="margin: 10px;" class="menu-content">
+            
+            <h5 style="
+                    margin-top: 8px;
+                    margin-bottom: 0px;
+                ">Theems & Coditions</h5>
+                    <h5 style="
+                    margin-top: 8px;
+                    margin-bottom: 0px;
+                ">Contact us</h5>
+                    <h5 style="
+                    margin-top: 8px;
+                    margin-bottom: 0px;
+                ">Bug Report</h5>
+            
+
+        </div>
+       
+
+
+    </div>
+  </div>
+  
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+
+
+
+
+
+<div class="marge-content">
+
+    <h2 class="name">Randika Srimal | BS</h2>
+    <img src="web-file/user.png" alt="" class="photo">
+    <p class="dis">Graduated in Administration from Rununu University, National School Teacher in Galle District, an experienced teacher who has been producing students with high results for ten years...</p>
+      
+    <h2 class="name">Udara sampath | ECON</h2>
+    <img src="web-file/user.png" alt="" class="photo">
+    <p class="dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit a error repellat cupiditate, vero est expedita corporis velit et quia quaerat asperiores, laborum doloremque officiis at commodi illo libero.</p>
+       
+
+   
+
+    <div class="c-1" style="background-color: #ffffff; box-shadow:none;"></div>
+
+
+
+
+
+
+</div>
+
+
+<!-- SElecttion panel-->
+
+<section class="flooter">
+    
+    <div class="panel-1">
+        <a href="index.html">
+        <img src="web-file/home-H.png" alt="" class="b-img"  style="margin-top: 5px;">
+        <h6 class="p-text"> <b>HOME</b></h6>
+        </a>
+    </div>
+
+
+    <div class="panel-2">
+        <a href="class.html" class="link">
+            <img src="web-file/lecture.png" class="b-img1"  style="margin-top: 12px;">
+            <h6 class="p-text"> class</h6>
+        </a>
+    </div>
+
+
+
+
+    <div class="panel-3">
+        <a href="staff.html">
+            <img src="web-file/presentation.png" alt="" class="b-img1"  style="margin-top: 12px;">
+            <h6 class="p-text">Teachers</h6>
+        </a>
+    </div>
+
+<!--
+    <div class="panel-4">
+        <a href="primium.html">
+            <img src="web-file/Pro-H.png" alt="" class="b-img1"  style="margin-top: 12px;">
+            <h6 class="p-text"> PRO</h6>
+        </a>
+    </div>-->
+</section>
+
+</body>
+</html>
