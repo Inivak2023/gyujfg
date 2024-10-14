@@ -1,9 +1,11 @@
 
 //2025
 
-    var BS2025 = "https://www.example.com";
-    var econ2025 = "https://www.acs.com";
-    var acc2025 = "https://www.inivak.com";
+var bsLink = localStorage.getItem('bsLink') || "http://www.defaultBS.com";
+var econLink = localStorage.getItem('econLink') || "www.defaultEcon.com";
+var accLink = localStorage.getItem('accLink') || "www.defaultACC.com";
+var ictLink = localStorage.getItem('ictLink') || "www.defaultICT.com";
+
 
 
 //2026
