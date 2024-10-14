@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    
+    <!-- BS Button Link -->
+    <form id="linkFormBS">
+        <label for="newLinkBS">New Link for BS:</label>
+        <input type="text" id="newLinkBS" placeholder="Enter new link for BS" required>
+        <button type="submit">Update BS Link</button>
+    </form>
+    
+    <!-- Econ Button Link -->
+    <form id="linkFormEcon">
+        <label for="newLinkEcon">New Link for Econ:</label>
+        <input type="text" id="newLinkEcon" placeholder="Enter new link for Econ" required>
+        <button type="submit">Update Econ Link</button>
+    </form>
+    
+    <!-- ACC Button Link -->
+    <form id="linkFormACC">
+        <label for="newLinkACC">New Link for ACC:</label>
+        <input type="text" id="newLinkACC" placeholder="Enter new link for ACC" required>
+        <button type="submit">Update ACC Link</button>
+    </form>
+    
+    <!-- ICT Button Link -->
+    <form id="linkFormICT">
+        <label for="newLinkICT">New Link for ICT:</label>
+        <input type="text" id="newLinkICT" placeholder="Enter new link for ICT" required>
+        <button type="submit">Update ICT Link</button>
+    </form>
+
+    <script>
+        // Admin panel opened => current links displayed
+        document.addEventListener('DOMContentLoaded', function() {
+            // Display stored links for each button
+            document.getElementById("newLinkBS").value = localStorage.getItem('bsLink') || "";
+            document.getElementById("newLinkEcon").value = localStorage.getItem('econLink') || "";
+            document.getElementById("newLinkACC").value = localStorage.getItem('accLink') || "";
+            document.getElementById("newLinkICT").value = localStorage.getItem('ictLink') || "";
+        });
+
+        // Form submit for BS => link update
+        document.getElementById("linkFormBS").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var newLinkBS = document.getElementById("newLinkBS").value;
+            if (newLinkBS) {
+                localStorage.setItem('bsLink', newLinkBS); // Store link for BS button
+                alert("Link for BS updated to: " + newLinkBS);
+            }
+        });
+
+        // Form submit for Econ => link update
+        document.getElementById("linkFormEcon").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var newLinkEcon = document.getElementById("newLinkEcon").value;
+            if (newLinkEcon) {
+                localStorage.setItem('econLink', newLinkEcon); // Store link for Econ button
+                alert("Link for Econ updated to: " + newLinkEcon);
+            }
+        });
+
+        // Form submit for ACC => link update
+        document.getElementById("linkFormACC").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var newLinkACC = document.getElementById("newLinkACC").value;
+            if (newLinkACC) {
+                localStorage.setItem('accLink', newLinkACC); // Store link for ACC button
+                alert("Link for ACC updated to: " + newLinkACC);
+            }
+        });
+
+        // Form submit for ICT => link update
+        document.getElementById("linkFormICT").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var newLinkICT = document.getElementById("newLinkICT").value;
+            if (newLinkICT) {
+                localStorage.setItem('ictLink', newLinkICT); // Store link for ICT button
+                alert("Link for ICT updated to: " + newLinkICT);
+            }
+        });
+    </script>
+</body>
+</html>
