@@ -518,8 +518,8 @@
 <h2 class="sub-head-t">BS</h2>
     <h3 class="sub-head-td"> wednesday : 6.00pm - 8.00pm</h3>
     <h3 class="sub-head-tt">teacher :- Randika Srimal</h3>
-    <button id="bsButton" class="input-btn">join class</button>
-    <button class="input-btn-d">Download Tiute</button>
+    <button onclick="navigateTo(BS2026)" class="input-btn">join class</button>
+    <button class="input-btn-d" >Download Tiute</button>
 </div>
 
 
@@ -528,7 +528,7 @@
 <h2 class="sub-head-t">ECON</h2>
     <h3 class="sub-head-td"> saturday : 3.00pm - 5.00pm</h3>
     <h3 class="sub-head-tt">teacher :- Udara Sampath</h3>
-    <button id="econButton" class="input-btn">join class</button>
+    <button onclick="navigateTo(econ2026)" class="input-btn">join class</button>
     <button class="input-btn-d">Download Tiute</button>
 </div>
 
@@ -538,34 +538,10 @@
 <h2 class="sub-head-t">ACC</h2>
     <h3 class="sub-head-td"> sunday : 9.00pm - 11.00pm</h3>
     <h3 class="sub-head-tt">teacher :- Udara Sampath</h3>
-    <button id="accButton" class="input-btn">join class</button></a>
+    <button onclick="navigateTo(acc2026)" class="input-btn">join class</button></a>
     <button class="input-btn-d">Download Tiute</button>
 </div>
 
-<script>
-    // Load the stored links from localStorage
-    var bsLink = localStorage.getItem('bsLink') || "www.defaultBS.com";   // Default BS link
-    var econLink = localStorage.getItem('econLink') || "www.defaultEcon.com"; // Default Econ link
-    var accLink = localStorage.getItem('accLink') || "www.defaultACC.com";   // Default ACC link
-    var ictLink = localStorage.getItem('ictLink') || "www.defaultICT.com";   // Default ICT link
-
-    // Button click events to open respective links
-    document.getElementById("bsButton").addEventListener("click", function() {
-        window.location.href = bsLink;
-    });
-
-    document.getElementById("econButton").addEventListener("click", function() {
-        window.location.href = econLink;
-    });
-
-    document.getElementById("accButton").addEventListener("click", function() {
-        window.location.href = accLink;
-    });
-
-    document.getElementById("ictButton").addEventListener("click", function() {
-        window.location.href = ictLink;
-    });
-</script>
 
 
 <div class="cards2"></div>
