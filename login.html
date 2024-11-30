@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Document</title>
+    
     <style>
 
 
@@ -99,6 +100,12 @@
         top: 50px;
         left:5%;
     }
+
+    .lo-img-1{
+        display: flex;
+        justify-content: center;
+    }
+
     
     </style>
 
@@ -233,10 +240,10 @@
         
     </header>
 
-<div class="Loginset" style="margin: 25px;">
-
-    <center><img src="web-file/user.png" alt="pro" width="120px"></center>
-
+<div class="Loginset" style="margin: 10%;">
+    <div class="lo-img-1">
+    <img src="web-file/user.png" alt="pro" width="120px" class="lo-img">
+    </div>
     <label for="username" class="Input-text">Regester Number</label>
     <input id="username" type="text" placeholder="Inivak000" />  <br>
     <small id="txt" style="display: block;" ></small>
@@ -245,72 +252,30 @@
     <button id="btn">Login</button>
 
 
-    <script src="web-file/jquery.js"></script>
-
-
-<!--000000000000000000000000000000000000000000000000000-->
-
-    <script>
-        $("#btn").click(function name() {
-            if ($("#username").val()==="123") {
-                if ($("#password").val()==="123") {
-                    $("#txt").text("");
-                    window.location.href = "AL-stu/AL-sample.html";}
-                
-
-                else{
-                    $("#txt").text("Invalid password");
-                    $("#txt").css("color","red");
-                }
-            }else{
-                $("#txt").text("Invalid username");
-                $("#txt").css("color","red");
-            }
-
-            
-
-        })
-
-
-        $("#btn").click(function name() {
-            if ($("#username").val()==="arosha") {
-                if ($("#password").val()==="arosha2006") {
-                    $("#txt").text("");
-                    window.location.href = "/../..";}
-                
-
-                else{
-                    $("#txt").text("Invalid password");
-                    $("#txt").css("color","red");
-                }
-            }else{
-                $("#txt").text("Invalid username");
-                $("#txt").css("color","red");
-            }
-
-            
-
-        })
-    </script>
-    <!--0000000000000000000000000000000000000000000000000000000000-->
 </div>
 
-<div style="text-align: center;font-family: system-ui;font-style: italic;font-size: small;position: relative;top: 80px;color: black;">
+
+
+
+<div style="text-align: center;font-family: system-ui;font-style: italic;font-size: small;position: relative;top: 62px;color: black;">
     <h2> You are not a inivak student?</h2> <div>
     <a href=""><button class="btn">Regester</button></a>
-    </div>
+    </div> 
 
-
-    <label for="" style="
+</div>
+    <label for style="
     position: relative;
-    top: 5px;
+    top: 67px;
     font-style: italic;
     font-family: emoji;
-">&copy;Inivak2024</label>
+    text-align: center;
+    display: block;"
+>&copy;Inivak2024</label>
 
 
- </div>
 
+ <script src="web-file/jquery.js"></script>
+ <script src="users/indika-student-IP001.js"></script>
 
     
 
